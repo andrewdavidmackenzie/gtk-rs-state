@@ -14,7 +14,7 @@ impl <A1, Result, F: FnOnce(A1) -> Result> FnBox<(A1,), Result> for F {
 }
 
 pub struct SendBoxFnOnce<'a, Arguments, Result =
-                         ()>(Box<FnBox<Arguments, Result> + Send + 'a>);
+                         ()>(Box<dyn FnBox<Arguments, Result> + Send + 'a>);
 
 impl <'a, Args, Result> SendBoxFnOnce<'a, Args, Result> {
     /// call inner function, consumes the box.
@@ -43,7 +43,7 @@ impl <'a, A1, Result, F: 'a + FnOnce(A1) -> Result + Send> From<F> for
  SendBoxFnOnce<'a, (A1,), Result> {
     fn from(func: F) -> Self {
         SendBoxFnOnce(Box::new(func) as
-                          Box<FnBox<(A1,), Result> + Send + 'a>)
+                          Box<dyn FnBox<(A1,), Result> + Send + 'a>)
     }
 }
 

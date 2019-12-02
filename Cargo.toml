@@ -6,14 +6,14 @@ description = "Allows modifing gtk-rs widgets from other threads."
 repository = "https://github.com/Phaiax/gtk-rs-state"
 license = "MIT"
 categories = ["gui"]
-#edition = "2018"
+edition = "2018"
 
 [dependencies]
 lazy_static = "1"
 
 [dependencies.gtk]
-version = "0.5"
-features = ["v3_10"]
+version = "0.7.0"
+features = ["v3_16"]
 
 [dependencies.glib]
-version = "0.6"
+glib = "0.8.2"

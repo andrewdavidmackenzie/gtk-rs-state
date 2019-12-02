@@ -102,6 +102,7 @@ macro_rules! gtk_refs {
         ///
         $modpub mod $modname {
             use $crate::*;
+            use gtk::BuilderExtManual;
 
             widget_refs!($structname; $( $i : $t ),* );
             with_gtk!($structname);
