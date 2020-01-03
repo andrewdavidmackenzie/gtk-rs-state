@@ -10,10 +10,8 @@ edition = "2018"
 
 [dependencies]
 lazy_static = "1"
+glib = "0.8.2"
 
 [dependencies.gtk]
 version = "0.7.0"
 features = ["v3_16"]
-
-[dependencies.glib]
-glib = "0.8.2"
