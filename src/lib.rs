@@ -9,7 +9,7 @@ pub mod widgetrefs;
 
 pub mod _modexport {
     pub use glib::source::idle_add;
-    pub use gtk::Continue;
+    pub use glib::Continue;
     pub use lazy_static::lazy_static;
 }
 
@@ -102,7 +102,7 @@ macro_rules! gtk_refs {
         ///
         $modpub mod $modname {
             use $crate::*;
-            use gtk::BuilderExtManual;
+            use gtk::prelude::*;
 
             widget_refs!($structname; $( $i : $t ),* );
             with_gtk!($structname);
