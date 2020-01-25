@@ -1,6 +1,6 @@
 [package]
 name = "gtk-fnonce-on-eventloop"
-version = "0.2.1"
+version = "0.2.2"
 authors = ["Phaiax <phaiax-git@invisibletower.de>", "Andrew Mackenzie <andrew@mackenzie-serres.net>"]
 description = "Allows modifing gtk-rs widgets from other threads."
 repository = "https://github.com/andrewdavidmackenzie/gtk-rs-state"
@@ -10,8 +10,5 @@ edition = "2018"
 
 [dependencies]
 lazy_static = "1"
-glib = "0.8.2"
-
-[dependencies.gtk]
-version = "0.8.0"
-features = ["v3_16"]
+glib = "0.9"
+gtk = "0.8"
