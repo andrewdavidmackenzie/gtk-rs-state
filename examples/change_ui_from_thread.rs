@@ -1,13 +1,10 @@
-
 extern crate gtk;
-extern crate gtk_fnonce_on_eventloop;
-
+extern crate gtk_rs_state;
 
 use gtk::prelude::*;
 use gtk::{Button, Window, WindowType};
 
-use gtk_fnonce_on_eventloop::gtk_refs;
-
+use gtk_rs_state::gtk_refs;
 
 /* This macro emits the following elements:
     pub mod widgets {
@@ -41,7 +38,7 @@ fn main() {
     }
 
     let window = Window::new(WindowType::Toplevel);
-    window.set_title("gtk-fnonce-on-eventloop Example Program");
+    window.set_title("gtk-rs-state Example Program");
     window.set_default_size(350, 70);
     let button = Button::new_with_label("Spawn another thread!");
     window.add(&button);

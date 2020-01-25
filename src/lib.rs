@@ -1,4 +1,3 @@
-
 extern crate glib;
 extern crate gtk;
 extern crate lazy_static;
@@ -16,9 +15,6 @@ pub mod _modexport {
 #[macro_export]
 macro_rules! gtk_refs {
     ( $modpub:vis mod $modname:ident ; struct $structname:ident ; $( $i:ident : $t:ty ),* ) => {
-
-
-        ///
         /// # Usage
         ///
         /// ```
@@ -37,7 +33,7 @@ macro_rules! gtk_refs {
         ///     }
         ///
         ///     let window = Window::new(WindowType::Toplevel);
-        ///     window.set_title("gtk-fnonce-on-eventloop Example Program");
+        ///     window.set_title("gtk-rs-state Example Program");
         ///     window.set_default_size(350, 70);
         ///     let button = Button::new_with_label("Spawn another thread!");
         ///     window.add(&button);

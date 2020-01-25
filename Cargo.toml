@@ -1,6 +1,6 @@
 [package]
-name = "gtk-fnonce-on-eventloop"
-version = "0.2.2"
+name = "gtk-rs-state"
+version = "0.3.0"
 authors = ["Phaiax <phaiax-git@invisibletower.de>", "Andrew Mackenzie <andrew@mackenzie-serres.net>"]
 description = "Allows modifing gtk-rs widgets from other threads."
 repository = "https://github.com/andrewdavidmackenzie/gtk-rs-state"

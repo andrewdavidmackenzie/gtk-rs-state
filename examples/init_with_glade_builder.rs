@@ -1,9 +1,9 @@
 
 extern crate gtk;
-extern crate gtk_fnonce_on_eventloop;
+extern crate gtk_rs_state;
 
 use gtk::prelude::*;
-use gtk_fnonce_on_eventloop::gtk_refs;
+use gtk_rs_state::gtk_refs;
 
 
 /* This macro emits the following elements:
