@@ -1,5 +1,5 @@
-
-# Modify gtk widgets from other threads
+[![Build Status](https://travis-ci.org/andrewdavidmackenzie/gtk-rs-state.svg?branch=master)](https://travis-ci.org/andrewdavidmackenzie/gtk-rs-state)
+# gtk-rs-state
 
 [reddit question](https://www.reddit.com/r/rust/comments/9uz3qn/what_is_the_best_way_to_structure_a_gtk_rust/)
 
@@ -10,17 +10,10 @@ use cases this should be enough.
 
 ## Cargo.toml
 
-You can use the newest versions, but you need glib next to gtk.
-
 ```toml
 [dependencies]
-gtk-fnonce-on-eventloop = "0.2"
+gtk-rs-state = "0.3"
 ```
-
-This crate uses these dependencies:
- - gtk in version = "0.5.0" with features = ["v3_10"]
- - glib in version = "0.6.0"
-
 
 ## Example usage
 
@@ -47,7 +40,7 @@ Don't call do_in_gtk_eventloop() in the main thread since this will block.
         }
 
         let window = Window::new(WindowType::Toplevel);
-        window.set_title("gtk-fnonce-on-eventloop Example Program");
+        window.set_title("gtk-rs-state Example Program");
         window.set_default_size(350, 70);
         let button = Button::new_with_label("Spawn another thread!");
         window.add(&button);
@@ -108,7 +101,6 @@ Don't call do_in_gtk_eventloop() in the main thread since this will block.
         }
     }
 ```
-
 
 The macro generates the following code:
 
