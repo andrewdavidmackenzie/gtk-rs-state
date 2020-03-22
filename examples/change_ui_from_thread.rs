@@ -31,7 +31,6 @@ gtk_refs!(
 );
 
 fn main() {
-
     if gtk::init().is_err() {
         println!("Failed to initialize GTK.");
         return;

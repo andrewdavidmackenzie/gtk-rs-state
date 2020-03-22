@@ -5,7 +5,6 @@ extern crate gtk_rs_state;
 use gtk::prelude::*;
 use gtk_rs_state::gtk_refs;
 
-
 /* This macro emits the following elements:
     mod widgets {
         pub struct WidgetRefs {
@@ -57,7 +56,6 @@ fn main() {
 
     gtk::main();
 }
-
 
 fn compute() {
     use std::thread::sleep;

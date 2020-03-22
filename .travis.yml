@@ -34,4 +34,5 @@ before_install:
 
 script:
   - rustc --version
-  - cargo test # includes compilation of all examples
+  - cargo test # compiles all examples
+  - cargo test --examples # run tests of all examples
