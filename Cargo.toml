@@ -1,8 +1,8 @@
 [package]
 name = "gtk-rs-state"
-version = "0.3.0"
+version = "0.4.0"
 authors = ["Phaiax <phaiax-git@invisibletower.de>", "Andrew Mackenzie <andrew@mackenzie-serres.net>"]
-description = "Allows modifing gtk-rs widgets from other threads."
+description = "Allows modifying gtk-rs widgets from other threads."
 repository = "https://github.com/andrewdavidmackenzie/gtk-rs-state"
 license = "MIT"
 categories = ["gui"]
@@ -10,5 +10,5 @@ edition = "2018"
 
 [dependencies]
 lazy_static = "1"
-glib = "0.9"
-gtk = "0.8"
+glib = "0.10"
+gtk = "0.9"

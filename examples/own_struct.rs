@@ -46,7 +46,7 @@ fn main() {
     let window = Window::new(WindowType::Toplevel);
     window.set_title("gtk-rs-state Example Program");
     window.set_default_size(350, 70);
-    let button = Button::new_with_label("Spawn another thread!");
+    let button = Button::with_label("Spawn another thread!");
     window.add(&button);
     window.show_all();
 

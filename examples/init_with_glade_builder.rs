@@ -35,7 +35,7 @@ gtk_refs!(
 fn main() {
     gtk::init().unwrap();
     let glade_src = include_str!("../ui.glade");
-    let builder = gtk::Builder::new_from_string(glade_src);
+    let builder = gtk::Builder::from_string(glade_src);
     widgets::init_storage_from_builder(&builder);
 
     // Optional: You can use the WidgetRefs type as a helper in
