@@ -26,6 +26,13 @@ addons:
   apt:
     packages:
       - libgtk-3-dev
+  homebrew:
+    update: true # if not then pango lib for gtk3 won't build
+    packages:
+      - gtk+3
+      - cairo
+      - pango
+      - atk
 
 before_install:
   - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update; fi
