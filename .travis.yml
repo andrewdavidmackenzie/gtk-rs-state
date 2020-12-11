@@ -4,8 +4,6 @@ cache:
   cargo: true
 
 # request macOS 10.15.7
-osx_image: xcode12.2
-
 matrix:
   include:
     - os: linux
@@ -15,10 +13,13 @@ matrix:
     - os: linux
       rust: nightly
     - os: osx
+      osx_image: xcode12.2
       rust: stable
     - os: osx
+      osx_image: xcode12.2
       rust: beta
     - os: osx
+      osx_image: xcode12.2
       rust: nightly
 
 branches:
