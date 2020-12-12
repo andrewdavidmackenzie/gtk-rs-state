@@ -1,11 +1,6 @@
-
-
 #[macro_export]
 macro_rules! with_gtk {
     ( $struct:ident ) => {
-
-
-
         use std::sync::mpsc;
         use std::sync::Mutex;
         use std::rc::Rc;

@@ -1,5 +1,3 @@
-
-
 #[macro_export]
 macro_rules! widget_refs {
     ( $structname:ident ; $( $i:ident : $t:ty),* ) => {

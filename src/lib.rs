@@ -1,7 +1,3 @@
-extern crate glib;
-extern crate gtk;
-extern crate lazy_static;
-
 pub mod fnbox;
 pub mod withgtk;
 pub mod widgetrefs;
