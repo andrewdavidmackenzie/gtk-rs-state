@@ -1,6 +1,6 @@
 [package]
 name = "gtk-rs-state"
-version = "0.4.0"
+version = "0.4.1"
 authors = ["Phaiax <phaiax-git@invisibletower.de>", "Andrew Mackenzie <andrew@mackenzie-serres.net>"]
 description = "Allows modifying gtk-rs widgets from other threads."
 repository = "https://github.com/andrewdavidmackenzie/gtk-rs-state"
