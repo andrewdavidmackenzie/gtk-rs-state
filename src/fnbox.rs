@@ -1,4 +1,3 @@
-
 //! Stolen from https://docs.rs/crate/boxfnonce/0.1.0
 
 pub trait FnBox<Arguments, Result> {
